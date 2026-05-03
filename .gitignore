@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Modelos e dados pesados — versionar via release ou DVC, não no Git
+models/*.joblib
+models/*.bin
+models/*.pt
+data/*.csv
+data/*.parquet
+data/*.npy
+!data/.gitkeep
+!models/.gitkeep
+
+# Métricas — versionar (são pequenas)
+!models/metrics.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
